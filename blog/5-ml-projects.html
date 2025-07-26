@@ -6,20 +6,48 @@
     <title>Top 5 Machine Learning Projects to Build in 2025</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media (min-width: 768px) {
+            .container {
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-in-out forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
 
     <header class="bg-white shadow-md py-8">
-        <div class="container mx-auto px-6 md:px-12">
-            <h1 class="text-4xl font-extrabold text-indigo-700 mb-2">🌟 Top 5 Machine Learning Projects to Build in 2025</h1>
-            <p class="text-gray-600 italic">By <span class="font-semibold text-indigo-600">Saeer Jan</span>, <span class="text-indigo-500">#MachineLearning, #MLProjects, #Python, #AIin2025</span></p>
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-extrabold text-indigo-700 mb-2 fade-in">🌟 Top 5 Machine Learning Projects to Build in 2025</h1>
+            <p class="text-gray-600 italic fade-in">By <span class="font-semibold text-indigo-600">Saeer Jan</span>, <span class="text-indigo-500">#MachineLearning, #MLProjects, #Python, #AIin2025</span></p>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 md:px-12 py-10 space-y-10">
+    <main class="container mx-auto py-10 space-y-10">
 
         <!-- Introduction -->
-        <section class="bg-white rounded-lg shadow-lg p-8">
+        <section class="bg-white rounded-lg shadow-lg p-6 md:p-8 fade-in">
             <h2 class="text-3xl font-bold text-indigo-700 mb-4">🚀 Introduction</h2>
             <p class="text-gray-700 mb-4">
                 Machine Learning is everywhere, from YouTube recommendations to autonomous driving. In 2025, its dominance only grows stronger. To be noticed, you need to work on impactful, real-world projects that solve actual problems.
@@ -36,7 +64,7 @@
         </section>
 
         <!-- Projects -->
-        <section class="bg-white rounded-lg shadow-lg p-8 space-y-8">
+        <section class="bg-white rounded-lg shadow-lg p-6 md:p-8 space-y-8 fade-in">
             <article>
                 <h2 class="text-3xl font-bold text-indigo-700 mb-2">📌 AI-Powered Resume Screener</h2>
                 <p class="text-gray-700">Build a smart system that reads and evaluates resumes based on job descriptions. Use NLP and models like BERT to score resumes for relevance. Great for understanding automation and HR-tech systems.</p>
@@ -64,7 +92,7 @@
         </section>
 
         <!-- Tips -->
-        <section class="bg-white rounded-lg shadow-lg p-8">
+        <section class="bg-white rounded-lg shadow-lg p-6 md:p-8 fade-in">
             <h2 class="text-3xl font-bold text-indigo-700 mb-4">✨ Bonus Tips for 2025</h2>
             <ul class="list-disc list-inside text-gray-700 space-y-2">
                 <li>Use Streamlit or Gradio to make your projects interactive</li>
@@ -76,17 +104,6 @@
         </section>
 
         <!-- Call to Action -->
-        <section class="bg-indigo-700 rounded-lg shadow-lg p-8 text-white text-center">
+        <section class="bg-indigo-700 rounded-lg shadow-lg p-6 md:p-8 text-white text-center fade-in">
             <h2 class="text-3xl font-bold mb-4">📣 Let’s Connect!</h2>
-            <p class="mb-4">Are you building something cool in ML? Use the tag <span class="font-semibold">#MLWithSaeer</span> to share your journey!</p>
-            <p class="italic text-indigo-200">Need project ideas, code templates, or mentorship? Reach out anytime!</p>
-        </section>
-
-    </main>
-
-    <footer class="bg-white py-6 mt-10 text-center text-gray-500 text-sm">
-        &copy; 2025 Saeer Jan. All rights reserved.
-    </footer>
-
-</body>
-</html>
+            <p class="mb-4">Are you building something cool in ML? Use the ta
