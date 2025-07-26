@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Engineer | Python Tutor | Web Creator</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-blue-600">Saeer</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Services</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Portfolio</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Testimonials</a>
+                    <a href="#blog" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Blog</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">About</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Services</a>
+                <a href="#portfolio" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Portfolio</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Testimonials</a>
+                <a href="#blog" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Blog</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-blue-50 via-white to-purple-50 animate-on-scroll">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 animate-on-scroll">
+                        Empowering businesses & individuals with
+                        <span class="text-blue-600">Machine Learning</span>,
+                        <span class="text-green-600">Python mastery</span> &
+                        <span class="text-purple-600">stunning WordPress websites</span>.
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        🚀 ML Engineer | Python Tutor | Web Creator
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Helping you turn ideas into intelligent, automated, and aesthetic solutions.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition duration-300">
+                            Book Free Call
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#portfolio" class="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition duration-300">
+                            View My Work
+                            <i class="fas fa-folder-open ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="aifaceswap-ff35ff7c0eab7e9ebce8ebed2707de27.JPG"
+                         alt="Professional workspace with laptop and AI visualization"
+                         class="rounded-lg shadow-xl w-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white animate-on-scroll">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Passionate about leveraging technology to solve complex problems and empower others through education.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                         alt="Professional portrait"
+                         class="rounded-lg shadow-lg w-full">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Why Work With Me?</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-code text-2xl text-blue-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold">5+ Years of Coding</h4>
+                                <p class="text-gray-600">Extensive experience in Python, ML, and web development</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-brain text-2xl text-green-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold">20+ ML Projects Completed</h4>
+                                <p class="text-gray-600">From simple automation to complex AI solutions</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-globe text-2xl text-purple-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold">50+ WordPress Sites Launched</h4>
+                                <p class="text-gray-600">Creating beautiful, functional websites for clients worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50 animate-on-scroll">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Services Offered</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive solutions tailored to your needs
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- ML Projects -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-4xl text-blue-600 mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 animate-on-scroll">ML Projects Consultation</h3>
+                    <p class="text-gray-600 mb-4">Get help building, debugging, or scaling ML models.</p>
+                    <a href="#contact" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">
+                        Get Quote
+                    </a>
+                </div>
+
+                <!-- Python Tutoring -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-4xl text-green-600 mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 animate-on-scroll">Python 1-on-1 Tutoring</h3>
+                    <p class="text-gray-600 mb-4">Personalized classes for students, engineers, and job-seekers.</p>
+                    <a href="#contact" class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition duration-300">
+                        Book Session
+                    </a>
+                </div>
+
+                <!-- WordPress -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-4xl text-purple-600 mb-4">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 animate-on-scroll">WordPress Website Building</h3>
+                    <p class="text-gray-600 mb-4">Business sites, portfolios, blogs & eCommerce solutions.</p>
+                    <a href="#contact" class="inline-block px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition duration-300">
+                        Start Project
+                    </a>
+                </div>
+
+                <!-- Automation -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-4xl text-red-600 mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 animate-on-scroll">Automation Scripts</h3>
+                    <p class="text-gray-600 mb-4">Small Python scripts to automate boring tasks or extract data.</p>
+                    <a href="#contact" class="inline-block px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300">
+                        Discuss Needs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-white animate-on-scroll">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    A showcase of my best work across different domains
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden portfolio-image">
+                    <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                         alt="Sentiment Analysis Project"
+                         class="w-full h-48 object-cover transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Sentiment Analysis Engine</h3>
+                        <p class="text-gray-600 mb-4">
+                            💡 Problem: Manual customer feedback analysis
+                            <br>
+                            🔍 Solution: ML-based sentiment analyzer
+                            <br>
+                            ✅ Result: 95% accuracy in feedback classification
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">NLP</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                         alt="E-commerce Website"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">E-commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">
+                            💡 Problem: Traditional retail going digital
+                            <br>
+                            🔍 Solution: Custom WordPress e-commerce site
+                            <br>
+                            ✅ Result: 200% increase in online sales
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">WordPress</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">WooCommerce</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/7376/startup-photos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                         alt="Data Automation Project"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Data Automation Suite</h3>
+                        <p class="text-gray-600 mb-4">
+                            💡 Problem: Time-consuming data entry
+                            <br>
+                            🔍 Solution: Python automation scripts
+                            <br>
+                            ✅ Result: 80% reduction in processing time
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Pandas</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                    Start Your Project
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50 animate-on-scroll">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    What others say about working with me
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                             alt="Client 1"
+                             class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-900">John Smith</h4>
+                            <p class="text-gray-600">Tech Startup CEO</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "The ML solution provided exceeded our expectations. Not only did it solve our immediate needs, but it also scaled beautifully with our growing business."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                             alt="Client 2"
+                             class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-900">Sarah Johnson</h4>
+                            <p class="text-gray-600">Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "The Python tutoring sessions were incredibly helpful. Clear explanations and practical examples helped me grasp complex concepts quickly."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                             alt="Client 3"
+                             class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-900">Mike Anderson</h4>
+                            <p class="text-gray-600">Small Business Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Our WordPress website looks amazing and performs even better. The attention to detail and responsive design have helped us attract more customers."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-white animate-on-scroll">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Latest Insights</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Sharing knowledge and experiences from the tech world
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden blog-card">
+                    <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                         alt="ML Projects Blog"
+                         class="w-full h-48 object-cover transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Top 5 ML Projects to Build in 2025</h3>
+                        <p class="text-gray-600 mb-4">
+                            Discover the most impactful machine learning projects that will shape the future of technology...
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                         alt="WordPress SEO Blog"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Triple Your Site Traffic with SEO + WordPress</h3>
+                        <p class="text-gray-600 mb-4">
+                            Learn the proven strategies that helped my clients achieve remarkable growth...
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                         alt="Python Investment Blog"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Why Python is the Best Investment in 2025</h3>
+                        <p class="text-gray-600 mb-4">
+                            Explore why Python continues to dominate the programming landscape...
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50 animate-on-scroll">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Let's discuss how we can work together to achieve your goals
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <form>
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit"
+                                class="w-full bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 cta-button">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Other Ways to Connect</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-2xl text-blue-600"></i>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold">Email</h4>
+                                <p class="text-gray-600">saeerjansaeer@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-2xl text-green-600"></i>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold">Phone</h4>
+                                <p class="text-gray-600">+923484109906</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-2xl text-red-600"></i>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold">Location</h4>
+                                <p class="text-gray-600">Peshawar, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/umainazeer/" class="text-gray-400 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                            </a>
+                            <a href="https://github.com/Saeer-jan" class="text-gray-400 hover:text-gray-900 transition-colors">
+                                <i class="fab fa-github text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Saeer</h3>
+                    <p class="text-gray-400">
+                        Empowering businesses & individuals with technology solutions.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">ML Projects</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Python Tutoring</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">WordPress Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Automation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Peshawar, Pakistan</li>
+                        <li class="text-gray-400">saeerjansaeer@gmail.com</li>
+                        <li class="text-gray-400">+923484109906</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Saeer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="/js/main.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+
+        // Animation on scroll
+
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const windowHeight = window.innerHeight;
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        };
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
