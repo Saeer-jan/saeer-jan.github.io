@@ -224,26 +224,35 @@
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden portfolio-image">
-                    <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                         alt="Sentiment Analysis Project" 
-                         class="w-full h-48 object-cover transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Sentiment Analysis Engine</h3>
-                        <p class="text-gray-600 mb-4">
-                            💡 Problem: Manual customer feedback analysis
-                            <br>
-                            🔍 Solution: ML-based sentiment analyser
-                            <br>
-                            ✅ Result: 90% accuracy in feedback classification
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">NLP</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">ML</span>
-                        </div>
-                    </div>
-                </div>
+    <a href="https://saeer-face-app.streamlit.app/" target="_blank" class="block group">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden portfolio-image hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+        
+        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+             alt="AI Face Classifier Project" 
+             class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
+        
+        <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                AI Face View Classifier
+            </h3>
+            
+            <p class="text-gray-600 mb-4 text-sm">
+                💡 <strong>Problem:</strong> Unfiltered face datasets (imbalanced)
+                <br>
+                🔍 <strong>Solution:</strong> ResNet50 (Transfer Learning)
+                <br>
+                ✅ <strong>Result:</strong> 99.3% Accuracy & Live App
+            </p>
+            
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-semibold">Python</span>
+                <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-semibold">TensorFlow</span>
+                <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-semibold">Streamlit</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">CV</span>
+            </div>
+        </div>
+    </div>
+</a>
 
                 <!-- Project 2 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -545,3 +554,4 @@
 
     <!-- Custom JavaScript -->
     <script src="/js/main.js"></script>
+
